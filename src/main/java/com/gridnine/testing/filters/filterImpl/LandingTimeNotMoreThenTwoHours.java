@@ -1,6 +1,6 @@
 package com.gridnine.testing.filters.filterImpl;
 
-import com.gridnine.testing.filters.Filter;
+import com.gridnine.testing.filters.Filters;
 import com.gridnine.testing.model.Flight;
 import com.gridnine.testing.model.Segment;
 
@@ -8,7 +8,7 @@ import com.gridnine.testing.model.Segment;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 
-public class LandingTimeNotMoreThenTwoHours implements Filter {
+public class LandingTimeNotMoreThenTwoHours implements Filters {
     @Override
     public Boolean doFiltering(Flight flight) {
         List<Segment> segmentList = flight.getSegments();
